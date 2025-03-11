@@ -32,6 +32,6 @@ type StarlightUserConfig = HookParameters<"config:setup">["config"];
 type ComponentOverride =
 	| keyof NonNullable<StarlightUserConfig["components"]>
 	| {
-			name: keyof NonNullable<StarlightUserConfig["components"]>;
-			fallback: string;
-	  };
+		name: keyof NonNullable<StarlightUserConfig["components"]>;
+		fallback: string;
+	};

@@ -6,15 +6,16 @@
 	"exports": {
 		".": "./index.ts",
 		"./styles/*": "./styles/*",
-		"./components": "./components.ts",
-		"./overrides/Header.astro": "./overrides/Header.astro",
-		"./overrides/Footer.astro": "./overrides/Footer.astro",
-		"./overrides/PageTitle.astro": "./overrides/PageTitle.astro"
+		"./components": "./src/components.ts",
+		"./overrides/Header.astro": "./src/overrides/Header.astro",
+		"./overrides/Footer.astro": "./src/overrides/Footer.astro",
+		"./overrides/PageTitle.astro": "./src/overrides/PageTitle.astro"
 	},
 	"author": "SST <hello@sst.dev>",
 	"files": [
 		"index.ts",
-		"styles"
+		"styles",
+		"src"
 	],
 	"devDependencies": {
 		"astro": "catalog:",

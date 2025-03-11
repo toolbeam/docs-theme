@@ -1,5 +1,5 @@
 import type { StarlightPlugin } from "@astrojs/starlight/types";
-import { overrideComponents } from "./lib/starlight";
+import { overrideComponents } from "./src/lib/starlight";
 
 export default function createPlugin(): StarlightPlugin {
 	return {
