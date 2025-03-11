@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"release": "bun run --filter=\"toolbeam-docs-theme\" build && changeset publish",
+		"release": "pnpm --filter=\"toolbeam-docs-theme\" build && changeset publish",
 		"dev": "pnpm --filter docs dev",
 		"build": "pnpm --filter docs build"
 	},
