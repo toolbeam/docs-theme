@@ -1,0 +1,30 @@
+{
+	"name": "toolbeam-docs-theme",
+	"version": "0.0.0",
+	"type": "module",
+	"license": "MIT",
+	"exports": {
+		".": "./index.ts",
+		"./styles/*": "./styles/*",
+		"./components": "./components.ts",
+		"./overrides/Header.astro": "./overrides/Header.astro",
+		"./overrides/Footer.astro": "./overrides/Footer.astro",
+		"./overrides/PageTitle.astro": "./overrides/PageTitle.astro"
+	},
+	"author": "SST <hello@sst.dev>",
+	"files": [
+		"index.ts",
+		"styles"
+	],
+	"devDependencies": {
+		"astro": "catalog:",
+		"typescript": "catalog:"
+	},
+	"peerDependencies": {
+		"@astrojs/starlight": "^0.32.0",
+		"astro": "^5.0.0"
+	},
+	"dependencies": {
+		"@astrojs/starlight": "catalog:"
+	}
+}

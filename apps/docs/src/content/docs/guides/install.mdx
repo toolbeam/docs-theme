@@ -1,0 +1,41 @@
+---
+title: Install
+description: Install the theme for Starlight.
+---
+
+1. Install the theme package to your project with your preferred package manager:
+
+	```bash
+	npm install toolbeam-docs-theme @fontsource/ibm-plex-mono
+	```
+
+	Optionally, install packages for linked headings.
+
+	```bash
+	npm install @astrojs/markdown-remark rehype-autolink-headings
+	```
+
+2. Add the theme to your Starlight config.
+
+   ```ts title="astro.config.mjs" ins={1-3,10,14-19}
+   import theme from "toolbeam-docs-theme";
+   import { rehypeHeadingIds } from "@astrojs/markdown-remark";
+   import rehypeAutolinkHeadings from "rehype-autolink-headings";
+
+   export default defineConfig({
+     // ...
+     integrations: [
+       starlight({
+         // ...
+         plugins: [theme()],
+       }),
+     ],
+    // Optional, linked headings
+    markdown: {
+      rehypePlugins: [
+        rehypeHeadingIds,
+        [rehypeAutolinkHeadings, { behavior: "wrap" }],
+      ],
+    },
+   });
+   ```
