@@ -1,8 +1,8 @@
 {
 	"$schema": "https://unpkg.com/@changesets/config@3.0.5/schema.json",
 	"changelog": "@changesets/cli/changelog",
-	"commit": true,
-	"fixed": [],
+	"commit": "./commit.cjs",
+	"fixed": [["toolbeam-docs-theme"]],
 	"linked": [],
 	"access": "public",
 	"baseBranch": "main",
