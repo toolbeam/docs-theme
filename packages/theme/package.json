@@ -7,6 +7,7 @@
 		".": "./index.ts",
 		"./styles/*": "./styles/*",
 		"./components": "./src/components.ts",
+		"./overrides/Head.astro": "./src/overrides/Head.astro",
 		"./overrides/Header.astro": "./src/overrides/Header.astro",
 		"./overrides/Footer.astro": "./src/overrides/Footer.astro",
 		"./overrides/PageTitle.astro": "./src/overrides/PageTitle.astro"

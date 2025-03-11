@@ -1,0 +1,12 @@
+---
+import type { Props } from '@astrojs/starlight/props'
+import Default from '@astrojs/starlight/components/Head.astro'
+
+const { slug, data } = Astro.locals.starlightRoute.entry;
+---
+
+{ slug === "" && (
+  <title>{data.title}</title>
+)}
+
+<Default {...Astro.props}><slot /></Default>
