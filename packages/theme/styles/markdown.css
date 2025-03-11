@@ -42,10 +42,10 @@
 /**
  * Code blocks
  */
-.sl-markdown-content .expressive-code .frame pre {
-}
-.sl-markdown-content .expressive-code .frame pre code {
-}
+/* .sl-markdown-content .expressive-code .frame pre { */
+/* } */
+/* .sl-markdown-content .expressive-code .frame pre code { */
+/* } */
 /* Plain blocks */
 .sl-markdown-content .expressive-code .frame:not(.has-title):not(.is-terminal) pre {
   border-color: var(--sl-color-white);

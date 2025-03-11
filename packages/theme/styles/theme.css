@@ -138,12 +138,8 @@ nav.sidebar ul.top-level > li > details > ul > li {
   padding-inline-start: 0;
   margin-inline-start: 0;
 }
-nav.sidebar ul.top-level ul {
-}
 nav.sidebar ul > li + li {
   margin-top: 0.25rem;
-}
-nav.sidebar ul.top-level > li > a {
 }
 nav.sidebar ul.top-level > li+li:has(> details) {
   margin-top: 0.5rem;
@@ -280,10 +276,10 @@ dialog[aria-label='Search']::backdrop {
   -webkit-backdrop-filter: blur(2px);
   animation: fadeInBackdrop 0.2s ease forwards;
 }
-@media (prefers-color-scheme: light) {
-  dialog[aria-label='Search']::backdrop {
-  }
-}
+/* @media (prefers-color-scheme: light) { */
+/*   dialog[aria-label='Search']::backdrop { */
+/*   } */
+/* } */
 @keyframes fadeInScaleUp {
   from {
     opacity: 0;
