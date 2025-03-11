@@ -1,19 +1,19 @@
 ---
-import config from 'virtual:starlight/user-config';
-import type { Props } from '@astrojs/starlight/props';
-import { Icon } from '@astrojs/starlight/components';
+import config from "virtual:starlight/user-config";
+import { Icon } from "@astrojs/starlight/components";
+import type { Props } from "@astrojs/starlight/props";
 
 const {
 	lang,
 	editUrl,
 	lastUpdated,
-  entry: {
+	entry: {
 		data: { template },
-  },
-} = Astro.locals.starlightRoute
+	},
+} = Astro.locals.starlightRoute;
 
-const slug = Astro.url.pathname.replace(/^\//, '').replace(/\/$/, '');
-const displayTemplate = slug === '' ? 'splash' : template;
+const slug = Astro.url.pathname.replace(/^\//, "").replace(/\/$/, "");
+const displayTemplate = slug === "" ? "splash" : template;
 ---
 
 {

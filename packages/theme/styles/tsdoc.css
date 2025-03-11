@@ -2,39 +2,43 @@
  * Segments
  */
 .sl-markdown-content > .tsdoc div.segment:not(:last-child):after {
-  content: '';
-  display: block;
-  height: 1px;
-  background: var(--sl-color-hairline);
-  margin-top: 1rem;
+	content: "";
+	display: block;
+	height: 1px;
+	background: var(--sl-color-hairline);
+	margin-top: 1rem;
 }
 
 /**
  * Headings
  */
 .sl-markdown-content > .tsdoc section h4:not(:where(.not-content *)) {
-  font-size: var(--sl-text-h5);
+	font-size: var(--sl-text-h5);
 }
-.sl-markdown-content > .tsdoc section.inline p:first-child strong:not(:where(.not-content *)) {
-  margin-right: var(--tsdoc-key-margin-right);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--sl-color-white);
+.sl-markdown-content
+	> .tsdoc
+	section.inline
+	p:first-child
+	strong:not(:where(.not-content *)) {
+	margin-right: var(--tsdoc-key-margin-right);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: var(--sl-color-white);
 }
 
 /**
  * Nested Title
  */
 .sl-markdown-content > .tsdoc :is(h4, h5).nested a {
-  text-decoration: none;
+	text-decoration: none;
 }
 .sl-markdown-content > .tsdoc :is(h4, h5).nested span.parent {
-  font-weight: 400;
-  color: var(--sl-color-text-secondary);
+	font-weight: 400;
+	color: var(--sl-color-text-secondary);
 }
 .sl-markdown-content > .tsdoc h4.nested span.parent {
-  font-size: calc(var(--sl-text-h4) - 0.0625rem);
+	font-size: calc(var(--sl-text-h4) - 0.0625rem);
 }
 
 /**
@@ -50,27 +54,27 @@
 .sl-markdown-content > .tsdoc section code.method:after,
 .sl-markdown-content > .tsdoc section code.symbol:after,
 .sl-markdown-content > .tsdoc section code.primitive:after {
-  content: '';
+	content: "";
 }
 .sl-markdown-content > .tsdoc section code.key {
-  margin-right: var(--tsdoc-key-margin-right);
+	margin-right: var(--tsdoc-key-margin-right);
 }
 .sl-markdown-content > .tsdoc section code.key,
 .sl-markdown-content > .tsdoc section code.primitive {
-  color: var(--sl-color-text);
+	color: var(--sl-color-text);
 }
 .sl-markdown-content > .tsdoc section code.symbol {
-  color: var(--sl-color-text-secondary);
+	color: var(--sl-color-text-secondary);
 }
 .sl-markdown-content > .tsdoc section code.type,
 .sl-markdown-content > .tsdoc section code.symbol,
 .sl-markdown-content > .tsdoc section code.primitive {
-  font-weight: 400;
+	font-weight: 400;
 }
 .sl-markdown-content > .tsdoc section code.primitive {
-  font-style: italic;
+	font-style: italic;
 }
 
 .sl-markdown-content > .tsdoc section span.dimmed {
-  color: var(--sl-color-text-secondary);
+	color: var(--sl-color-text-secondary);
 }

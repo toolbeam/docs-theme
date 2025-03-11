@@ -1,8 +1,8 @@
-import theme from "toolbeam-docs-theme";
+import { rehypeHeadingIds } from "@astrojs/markdown-remark";
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
-import { rehypeHeadingIds } from "@astrojs/markdown-remark"
-import rehypeAutolinkHeadings from "rehype-autolink-headings"
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import theme from "toolbeam-docs-theme";
 
 const discord = "https://discord.gg/sst";
 const github = "https://github.com/toolbeam/docs-theme";
@@ -23,8 +23,7 @@ export default defineConfig({
 			editLink: {
 				baseUrl: `${github}/edit/master/www/`,
 			},
-			customCss: [
-			],
+			customCss: [],
 			sidebar: [
 				"guides/install",
 				{

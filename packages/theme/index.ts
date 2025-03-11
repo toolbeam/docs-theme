@@ -10,11 +10,7 @@ export default function createPlugin(): StarlightPlugin {
 				updateConfig({
 					components: overrideComponents(
 						config,
-						[
-							"Header",
-							"Footer",
-							"PageTitle",
-						],
+						["Header", "Footer", "PageTitle"],
 						logger,
 					),
 					pagination: false,

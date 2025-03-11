@@ -1,18 +1,18 @@
 ---
-import config from 'virtual:starlight/user-config';
-import type { Props } from '@astrojs/starlight/props';
+import config from "virtual:starlight/user-config";
+import type { Props } from "@astrojs/starlight/props";
 
-import { Icon } from '@astrojs/starlight/components';
-import Search from 'virtual:starlight/components/Search';
-import SiteTitle from 'virtual:starlight/components/SiteTitle';
-import SocialIcons from 'virtual:starlight/components/SocialIcons';
+import Search from "virtual:starlight/components/Search";
+import SiteTitle from "virtual:starlight/components/SiteTitle";
+import SocialIcons from "virtual:starlight/components/SocialIcons";
+import { Icon } from "@astrojs/starlight/components";
 
 /**
  * Render the `Search` component if Pagefind is enabled or the default search component has been overridden.
  */
 const shouldRenderSearch =
-	config.pagefind || config.components.Search !== '@astrojs/starlight/components/Search.astro';
-
+	config.pagefind ||
+	config.components.Search !== "@astrojs/starlight/components/Search.astro";
 ---
 
 <div class="header sl-flex">
