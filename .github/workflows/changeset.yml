@@ -6,6 +6,11 @@ on:
 env:
   CI: true
   PNPM_CACHE_FOLDER: .pnpm-store
+
+permissions:
+  contents: write
+  packages: write
+
 jobs:
   version:
     timeout-minutes: 15
