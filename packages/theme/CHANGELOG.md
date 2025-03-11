@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.0.3
+
+### Patch Changes
+
+- ba79864: Fix title in lander
+
 ## 0.0.2
 
 ### Patch Changes
