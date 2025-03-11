@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.0.4
+
+### Patch Changes
+
+- 022e3c1: Fix releases
+
 ## 0.0.3
 
 ### Patch Changes
