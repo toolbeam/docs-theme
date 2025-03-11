@@ -2,7 +2,7 @@
 <p align="center">
   <a href="https://sst.dev/discord"><img alt="Discord" src="https://img.shields.io/discord/983865673656705025?style=flat-square&label=Discord" /></a>
   <a href="https://www.npmjs.com/package/toolbeam-docs-theme"><img alt="npm" src="https://img.shields.io/npm/v/toolbeam-docs-theme?style=flat-square" /></a>
-  <a href="https://github.com/toolbeam/docs-theme/actions/workflows/changeset.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/toolbeam/docs-theme/changeset.yml?style=flat-square&branch=master" /></a>
+  <a href="https://github.com/toolbeam/docs-theme/actions/workflows/changeset.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/toolbeam/docs-theme/changeset.yml?style=flat-square&branch=main" /></a>
 </p>
 
 ## Usage
