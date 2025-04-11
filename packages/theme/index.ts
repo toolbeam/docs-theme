@@ -14,10 +14,10 @@ const configSchema = z
 	}).optional();
 
 export default function createPlugin(options?: ToolbeamDocsThemeUserConfig): StarlightPlugin {
-	const parsedConfig = configSchema.safeParse(options)
+	const parsedConfig = configSchema.safeParse(options);
 
 	if (!parsedConfig.success) {
-		throw new AstroError(`The provided plugin configuration is invalid.`)
+		throw new AstroError("The provided plugin configuration is invalid.");
 	}
 	return {
 		name: "toolbeam-docs-theme",
