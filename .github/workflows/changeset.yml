@@ -11,6 +11,8 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   version:
     timeout-minutes: 15
