@@ -1,19 +1,22 @@
-import { z } from "astro/zod";
-import { AstroError } from "astro/errors";
 import type { StarlightPlugin } from "@astrojs/starlight/types";
+import { AstroError } from "astro/errors";
+import { z } from "astro/zod";
 import { overrideComponents } from "./src/lib/starlight";
 
 const headerLinkSchema = z.object({
 	name: z.string(),
-	url: z.string()
+	url: z.string(),
 });
 
 const configSchema = z
 	.object({
-		headerLinks: z.array(headerLinkSchema).optional()
-	}).optional();
+		headerLinks: z.array(headerLinkSchema).optional(),
+	})
+	.optional();
 
-export default function createPlugin(options?: ToolbeamDocsThemeUserConfig): StarlightPlugin {
+export default function createPlugin(
+	options?: ToolbeamDocsThemeUserConfig,
+): StarlightPlugin {
 	const parsedConfig = configSchema.safeParse(options);
 
 	if (!parsedConfig.success) {
@@ -51,4 +54,4 @@ export default function createPlugin(options?: ToolbeamDocsThemeUserConfig): Sta
 }
 
 type ToolbeamDocsThemeUserConfig = z.infer<typeof configSchema>;
-export type ToolbeamDocsThemeConfig = z.output<typeof configSchema>
+export type ToolbeamDocsThemeConfig = z.output<typeof configSchema>;
