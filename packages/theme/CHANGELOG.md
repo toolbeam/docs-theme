@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.1.0
+
+### Minor Changes
+
+- 26508c5: Adding header links
+
 ## 0.0.4
 
 ### Patch Changes
