@@ -1,4 +1,4 @@
-// biome-ignore lint/style/noVar
+// biome-ignore lint/style/noVar:
 declare var toolbeamDocsThemeConfig: {
 	headerLinks?: {
 		name: string;
