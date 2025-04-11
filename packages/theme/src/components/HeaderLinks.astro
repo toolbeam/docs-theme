@@ -1,0 +1,18 @@
+---
+const { headerLinks } = globalThis.toolbeamDocsThemeConfig ?? {};
+---
+{
+  headerLinks?.map(({ name, url }) => (
+    <a class="links" href={url}>{name}</a>
+  ))
+}
+
+<style>
+  a.links {
+		text-transform: uppercase;
+    font-size: var(--sl-text-sm);
+    color: var(--color-text);
+    line-height: normal;
+  }
+</style>
+

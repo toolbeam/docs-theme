@@ -35,7 +35,13 @@ export default defineConfig({
 					autogenerate: { directory: "reference" },
 				},
 			],
-			plugins: [theme()],
+			plugins: [theme({
+				headerLinks: [
+					{ name: "Home", url: "/" },
+					{ name: "Docs", url: "/docs/" },
+					{ name: "Blog", url: "/blog/" },
+				],
+			})],
 		}),
 	],
 	markdown: {

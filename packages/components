@@ -6,7 +6,6 @@ import Search from "virtual:starlight/components/Search";
 import SiteTitle from "virtual:starlight/components/SiteTitle";
 import SocialIcons from "virtual:starlight/components/SocialIcons";
 import { Icon } from "@astrojs/starlight/components";
-import HeaderLinks from "../components/HeaderLinks.astro";
 
 /**
  * Render the `Search` component if Pagefind is enabled or the default search component has been overridden.
@@ -20,8 +19,7 @@ const shouldRenderSearch =
 	<div class="title-wrapper sl-flex">
 		<SiteTitle {...Astro.props} />
 	</div>
-	<div class="middle-group sl-flex">
-		<HeaderLinks {...Astro.props} />
+	<div class="sl-flex">
 	</div>
 	<div class="sl-hidden md:sl-flex right-group">
 		<div class="sl-flex social-icons">
@@ -38,7 +36,7 @@ const shouldRenderSearch =
 
 <style>
 	.header {
-		gap: calc(var(--sl-nav-gap) * 2);
+		gap: var(--sl-nav-gap);
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
@@ -50,23 +48,6 @@ const shouldRenderSearch =
 		/* Avoid clipping focus ring around link inside title wrapper. */
     padding: calc(0.25rem + 2px) 0.25rem calc(0.25rem - 2px);
 		margin: -0.25rem;
-	}
-
-	.middle-group {
-		justify-content: flex-end;
-		gap: var(--sl-nav-gap);
-	}
-	@media (max-width: 50rem) {
-		:global(:root[data-has-sidebar]) {
-			.middle-group {
-				display: none;
-			}
-		}
-	}
-	@media (min-width: 50rem) {
-		.middle-group {
-			display: flex;
-		}
 	}
 
 	.right-group,
