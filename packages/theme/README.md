@@ -30,13 +30,13 @@
        starlight({
          // ...
          plugins: [theme({
-					 // Optionally, add your own header links
-					 headerLinks: [
-						 { name: "Home", url: "/" },
-						 { name: "Docs", url: "/docs/" },
-						 { name: "Blog", url: "/blog/" },
-					 ],
-				 })],
+           // Optionally, add your own header links
+           headerLinks: [
+             { name: "Home", url: "/" },
+             { name: "Docs", url: "/docs/" },
+             { name: "Blog", url: "/blog/" },
+           ],
+         })],
        }),
      ],
    });
