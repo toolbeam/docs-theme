@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-var
+// biome-ignore lint/style/noVar
 declare var toolbeamDocsThemeConfig: {
 	headerLinks?: {
 		name: string;
