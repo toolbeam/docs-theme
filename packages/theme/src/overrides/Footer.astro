@@ -14,6 +14,8 @@ const {
 
 const slug = Astro.url.pathname.replace(/^\//, "").replace(/\/$/, "");
 const displayTemplate = slug === "" ? "splash" : template;
+
+const links = config.social || [];
 ---
 
 {
@@ -25,14 +27,33 @@ const displayTemplate = slug === "" ? "splash" : template;
             <Icon name="pencil" size="1em" />
             Edit this page
           </a>
-          <a href={`${config.social.github.url}/issues/new`} target="_blank" class="sl-flex">
-            <Icon name="github" size="1em" />
-            Find a bug? Open an issue
-          </a>
-          <a href={config.social.discord.url} target="_blank" class="sl-flex">
-            <Icon name="discord" size="1em" />
-            Join our Discord community
-          </a>
+					{
+						links.length > 0 && (
+							<>
+								{links.map(({ href, icon }) => {
+									if (icon === "github") {
+											return (
+											<a href={`${href}/issues/new`} target="_blank" class="sl-flex">
+												<Icon name="github" size="1em" />
+												Find a bug? Open an issue
+											</a>
+											);
+										}
+
+										if (icon === "discord") {
+											return (
+											<a href={href} target="_blank" class="sl-flex">
+												<Icon name="discord" size="1em" />
+												Join our Discord community
+											</a>
+											);
+										}
+
+										return null;
+									})}
+							</>
+						)
+					}
         </div>
         <div>
           <p>Maintained by <a target="_blank" href="https://sst.dev">SST</a></p>

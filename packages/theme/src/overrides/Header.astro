@@ -14,6 +14,8 @@ import HeaderLinks from "../components/HeaderLinks.astro";
 const shouldRenderSearch =
 	config.pagefind ||
 	config.components.Search !== "@astrojs/starlight/components/Search.astro";
+
+const links = config.social || [];
 ---
 
 <div class="header sl-flex">
@@ -24,14 +26,17 @@ const shouldRenderSearch =
 		<HeaderLinks {...Astro.props} />
 	</div>
 	<div class="sl-hidden md:sl-flex right-group">
-		<div class="sl-flex social-icons">
-      <a class="stars" href={config.social.github.url} target="_blank">
-        <Icon name="github" size="1rem" />
-      </a>
-      <a class="stars" href={config.social.discord.url} target="_blank">
-        <Icon name="discord" size="1rem" />
-      </a>
-		</div>
+		{
+			links.length > 0 && (
+				<div class="sl-flex social-icons">
+					{links.map(({ href, icon }) => (
+						<a {href} rel="me" target="_blank">
+							<Icon name={icon} size="1rem" />
+						</a>
+					))}
+				</div>
+			)
+		}
 		{shouldRenderSearch && <Search {...Astro.props} />}
 	</div>
 </div>

@@ -16,10 +16,10 @@ export default defineConfig({
 		starlight({
 			title: "Toolbeam Docs Theme",
 			favicon: "/favicon.svg",
-			social: {
-				github,
-				discord,
-			},
+			social: [
+				{ icon: "discord", label: "Discord", href: discord },
+				{ icon: "github", label: "GitHub", href: github },
+			],
 			editLink: {
 				baseUrl: `${github}/edit/master/www/`,
 			},

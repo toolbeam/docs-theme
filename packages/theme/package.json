@@ -19,14 +19,12 @@
 		"src"
 	],
 	"devDependencies": {
+		"@astrojs/starlight": "catalog:",
 		"astro": "catalog:",
 		"typescript": "catalog:"
 	},
 	"peerDependencies": {
 		"@astrojs/starlight": "^0.32.0",
 		"astro": "^5.0.0"
-	},
-	"dependencies": {
-		"@astrojs/starlight": "catalog:"
 	}
 }
