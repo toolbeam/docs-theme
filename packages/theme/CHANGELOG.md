@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.2.1
+
+### Patch Changes
+
+- a3af8ba: Upgrade to 5.7 Astro
+
 ## 0.2.0
 
 ### Minor Changes
