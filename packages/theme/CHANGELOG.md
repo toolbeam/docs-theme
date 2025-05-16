@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.2.2
+
+### Patch Changes
+
+- 02a323e: Fix peer deps
+
 ## 0.2.1
 
 ### Patch Changes
