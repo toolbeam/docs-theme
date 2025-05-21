@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.2.3
+
+### Patch Changes
+
+- d392701: Fix footer
+
 ## 0.2.2
 
 ### Patch Changes
