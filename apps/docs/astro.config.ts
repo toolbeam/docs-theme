@@ -25,7 +25,7 @@ export default defineConfig({
 			},
 			customCss: [],
 			markdown: {
-				headingLinks: false
+				headingLinks: false,
 			},
 			sidebar: [
 				"guides/install",
