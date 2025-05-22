@@ -44,14 +44,18 @@
 
    Optionally, add the config for the linked headings.
 
-   ```ts title="astro.config.mjs" ins={1,2,8-13}
+   ```ts title="astro.config.mjs" ins={1,2,7,8,9,12-17}
    import { rehypeHeadingIds } from "@astrojs/markdown-remark";
    import rehypeAutolinkHeadings from "rehype-autolink-headings";
 
    export default defineConfig({
-     // integrations: [
-     //   starlight({ }),
-     // ],
+     integrations: [
+       starlight({
+         markdown: {
+           headingLinks: false
+         }
+       }),
+     ],
      markdown: {
        rehypePlugins: [
          rehypeHeadingIds,

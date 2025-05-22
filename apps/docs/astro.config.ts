@@ -24,6 +24,9 @@ export default defineConfig({
 				baseUrl: `${github}/edit/master/www/`,
 			},
 			customCss: [],
+			markdown: {
+				headingLinks: false
+			},
 			sidebar: [
 				"guides/install",
 				{
