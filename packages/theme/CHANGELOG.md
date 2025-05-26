@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.2.4
+
+### Patch Changes
+
+- f285f90: Tweak exports
+
 ## 0.2.3
 
 ### Patch Changes
