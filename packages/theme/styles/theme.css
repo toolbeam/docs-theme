@@ -248,7 +248,7 @@ mobile-starlight-toc nav .dropdown {
 	border-bottom: 1px solid var(--sl-color-hairline);
 }
 mobile-starlight-toc nav .dropdown a {
-	border-color: var(--divider-color);
+	border-color: var(--sl-color-hairline);
 }
 mobile-starlight-toc nav .dropdown a[aria-current="true"] {
 	font-weight: 500;
