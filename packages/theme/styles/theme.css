@@ -1,6 +1,8 @@
 :root {
 	--__sl-font: "IBM Plex Mono", var(--sl-font-system-mono);
 
+  --sl-color-text: var(--sl-color-white);
+
 	--sl-text-2xs: 0.75rem; /* 12px */
 	--sl-text-xs: 0.8125rem; /* 13px */
 	--sl-text-sm: 0.875rem; /* 14px */
@@ -17,14 +19,18 @@
 /* Dark mode */
 :root,
 ::backdrop {
-	--sl-color-text-secondary: var(--sl-color-gray-2);
-	--sl-color-text-dimmed: var(--sl-color-gray-3);
+	--sl-color-border: var(--sl-color-gray-4);
+
+	--sl-color-text-secondary: hsl(224, 6%, 66%);
+	--sl-color-text-dimmed: hsl(224, 7%, 46%);
 }
 /* Light mode */
 :root[data-theme="light"],
 [data-theme="light"] ::backdrop {
-	--sl-color-text-secondary: var(--sl-color-gray-3);
-	--sl-color-text-dimmed: var(--sl-color-gray-4);
+	--sl-color-border: var(--sl-color-gray-5);
+
+	--sl-color-text-secondary: hsl(224, 7%, 46%);
+	--sl-color-text-dimmed: hsl(224, 6%, 63%);
 }
 
 body {
@@ -40,7 +46,7 @@ a {
  */
 body > .page > header {
 	background-color: var(--sl-color-black);
-	border-color: var(--sl-color-white);
+	border-color: var(--sl-color-border);
 }
 @media (min-width: 50rem) {
 	body > .page > header,
@@ -105,7 +111,7 @@ starlight-theme-select {
  * Content
  */
 body > .page > .main-frame .main-pane > main > .content-panel + .content-panel {
-	border-top: 1px solid var(--sl-color-white);
+	border-top: 1px solid var(--sl-color-border);
 }
 @media (min-width: 72rem) {
 	body > .page > .main-frame .main-pane > main > .content-panel .sl-container {
@@ -117,7 +123,7 @@ body > .page > .main-frame .main-pane > main > .content-panel + .content-panel {
  * Sidebar
  */
 nav.sidebar .sidebar-pane {
-	border-color: var(--sl-color-white);
+	border-color: var(--sl-color-border);
 	padding-top: 0;
 	background-color: var(--sl-color-bg);
 }
@@ -162,7 +168,7 @@ nav.sidebar ul.top-level > li > details > summary .group-label > span {
 	font-family: var(--__sl-font-mono);
 	font-size: var(--sl-text-code-sm);
 	letter-spacing: 0.5px;
-	color: var(--sl-color-white);
+	color: var(--sl-color-text);
 }
 nav.sidebar summary svg.caret {
 	color: var(--sl-color-text-dimmed);
@@ -183,7 +189,7 @@ nav.sidebar a[aria-current="page"]:focus {
  */
 @media (min-width: 72rem) {
 	.right-sidebar {
-		border-color: var(--sl-color-white);
+		border-color: var(--sl-color-border);
 	}
 }
 .right-sidebar-panel h2 {
@@ -226,7 +232,7 @@ mobile-starlight-toc nav {
 }
 mobile-starlight-toc nav summary {
 	gap: 0.75rem;
-	border-bottom: 1px solid var(--sl-color-white);
+	border-bottom: 1px solid var(--sl-color-border);
 }
 mobile-starlight-toc nav summary .toggle {
 	border-radius: var(--border-radius);
@@ -263,7 +269,7 @@ mobile-starlight-toc nav .dropdown a[aria-current="true"]::after {
 dialog[aria-label="Search"] {
 	border: none;
 	border-radius: 0;
-	border: 1px solid var(--sl-color-white);
+	border: 1px solid var(--sl-color-border);
 	background-color: var(--sl-color-bg);
 	box-shadow: var(--sl-shadow-md);
 }
