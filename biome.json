@@ -8,8 +8,6 @@
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"includes": [
-      "**", "!**/.astro/**", "!**/package.json", "!**/dist/**"
-    ]
+		"ignore": ["**/.astro/**", "**/package.json", "**/dist/**"]
 	}
 }
