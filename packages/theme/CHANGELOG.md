@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.3.0
+
+### Minor Changes
+
+- 5545d2a: Softening colors
+
 ## 0.2.4
 
 ### Patch Changes
