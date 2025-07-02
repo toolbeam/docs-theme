@@ -1,10 +1,39 @@
 /**
+ * Paragraphs
+ */
+.sl-markdown-content :not(a, strong, em, del, span, input, code)
+  + :not(a, strong, em, del, span, input, code, :where(.not-content *)) {
+  margin-top: var(--paragraph-spacing);
+}
+/* Space around asides and code blocks */
+.sl-markdown-content :not(a, strong, em, del, span, input, code)
+  + :is(.starlight-aside, .expressive-code) {
+  margin-top: calc(var(--paragraph-spacing) + 0.4375rem);
+}
+.sl-markdown-content :is(.starlight-aside, .expressive-code, table)
+  + :not(a, strong, em, del, span, input, code, h1, h2, h3, h4, h5, h6, :where(.not-content *)) {
+  margin-top: calc(var(--paragraph-spacing) + 0.5rem);
+}
+.sl-markdown-content :is(.starlight-aside, .expressive-code)
+  + :is(.starlight-aside, .expressive-code) {
+  margin-top: calc(var(--paragraph-spacing) + 1.125rem);
+}
+/* Space around sections */
+.sl-markdown-content :not(h1, h2, h3, h4, h5, h6)
+  + :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)),
+.sl-markdown-content :not(a, strong, em, del, span, input, code)
+  + hr:not(:where(.not-content *)),
+.sl-markdown-content hr:not(:where(.not-content *)) + :not(a, strong, em, del, span, input, code, :where(.not-content *))
+{
+  margin-top: calc(var(--paragraph-spacing) + 2rem);
+}
+/**
  * Links
  */
 .sl-markdown-content a:not(:where(.not-content *)),
 .sl-markdown-content a:not(:where(.not-content *)) code {
 	color: var(--sl-color-text);
-	text-underline-offset: 0.1875rem;
+	text-underline-offset: 0.25rem;
 	text-decoration: underline;
 }
 .sl-markdown-content a:hover:not(:where(.not-content *)) {
@@ -42,10 +71,6 @@
 /**
  * Code blocks
  */
-/* .sl-markdown-content .expressive-code .frame pre { */
-/* } */
-/* .sl-markdown-content .expressive-code .frame pre code { */
-/* } */
 /* Plain blocks */
 .sl-markdown-content
 	.expressive-code
@@ -271,4 +296,11 @@
 }
 .custom-aside-video .starlight-aside__title a svg {
 	opacity: 0.8;
+}
+
+/**
+* Lists
+*/
+.sl-markdown-content li > :last-child:not(li, ul, ol):not(a, strong, em, del, span, input, :where(.not-content *)) {
+  margin-bottom: calc(var(--paragraph-spacing) + 0.5rem);
 }

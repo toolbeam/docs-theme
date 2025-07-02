@@ -14,6 +14,11 @@
 	--sl-text-4xl: 1.75rem; /* 30px */
 	--sl-text-5xl: 2.5rem; /* 40px */
 	--sl-text-6xl: 3.25rem; /* 52px */
+
+	--sl-text-h3: 1.5rem;
+	--sl-text-h4: 1.125rem;
+
+	--paragraph-spacing: 1.5rem;
 }
 
 /* Dark mode */
