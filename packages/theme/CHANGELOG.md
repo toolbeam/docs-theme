@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.4.0
+
+### Minor Changes
+
+- 16ad572: Tweak markdown styles
+
 ## 0.3.0
 
 ### Minor Changes
