@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.4.1
+
+### Patch Changes
+
+- 8ac1edb: Tweak line heights
+
 ## 0.4.0
 
 ### Minor Changes
