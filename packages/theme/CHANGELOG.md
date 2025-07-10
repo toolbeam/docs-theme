@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.4.3
+
+### Patch Changes
+
+- 0461ca1: Tweaking heading font sizes
+
 ## 0.4.2
 
 ### Patch Changes
