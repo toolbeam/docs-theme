@@ -18,10 +18,10 @@
 	--sl-text-6xl: 3.25rem; /* 52px */
 
 	--sl-text-h1: 2rem;
-	--sl-text-h2: 1.75rem;
+	--sl-text-h2: var(--sl-text-4xl);
 	--sl-text-h3: 1.5rem;
-	--sl-text-h4: 1.25rem;
-	--sl-text-h5: 1.125rem;
+	--sl-text-h4: var(--sl-text-xl);
+	--sl-text-h5: var(--sl-text-lg);
 
 	--paragraph-spacing: 1.375rem;
 }
@@ -29,8 +29,8 @@
 @media (min-width: 50rem) {
 	:root {
 		--sl-text-h1: 2.5rem;
-		--sl-text-h2: 1.875rem;
-		--sl-text-h3: 1.5rem;
+		--sl-text-h2: 2rem;
+		--sl-text-h3: 1.5625rem;
 		--sl-text-h4: 1.25rem;
 	}
 }
