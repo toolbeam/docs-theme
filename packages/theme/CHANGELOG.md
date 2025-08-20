@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.4.4
+
+### Patch Changes
+
+- b561a51: Footer copy
+
 ## 0.4.3
 
 ### Patch Changes
