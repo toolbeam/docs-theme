@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.4.5
+
+### Patch Changes
+
+- ca07f3a: Fix details block
+
 ## 0.4.4
 
 ### Patch Changes
