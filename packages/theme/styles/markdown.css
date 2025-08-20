@@ -309,3 +309,10 @@
 .sl-markdown-content li > :last-child:not(li, ul, ol):not(a, strong, em, del, span, input, :where(.not-content *)) {
   margin-bottom: calc(var(--paragraph-spacing) + 0.5rem);
 }
+
+/**
+* Details
+*/
+.sl-markdown-content details:not(:where(.not-content *)) {
+	--sl-details-border-color--hover: var(--sl-details-border-color);
+}
