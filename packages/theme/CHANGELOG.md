@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.4.6
+
+### Patch Changes
+
+- 55f8dc4: Fix sidebar
+
 ## 0.4.5
 
 ### Patch Changes
