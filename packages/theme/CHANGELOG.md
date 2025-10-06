@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.4.7
+
+### Patch Changes
+
+- a6d4615: Fix footer
+
 ## 0.4.6
 
 ### Patch Changes
