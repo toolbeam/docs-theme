@@ -1,5 +1,11 @@
 # toolbeam-docs-theme
 
+## 0.4.8
+
+### Patch Changes
+
+- c530d06: Tweak footer more
+
 ## 0.4.7
 
 ### Patch Changes
