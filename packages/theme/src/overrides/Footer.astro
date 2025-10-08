@@ -47,13 +47,13 @@ const discord = config.social.filter((s) => s.icon === "discord")[0];
         </div>
         <div>
 					<p>&copy; <a target="_blank" href="https://anoma.ly">Anomaly</a></p>
-          <p>
-            Last updated —{' '}
-            { lastUpdated && (
+          <p title="Last updated">
+            { lastUpdated ? (
             <time datetime={lastUpdated.toISOString()}>
               {lastUpdated.toLocaleDateString(lang, { dateStyle: 'medium', timeZone: 'UTC' })}
             </time>
-            )}
+				)
+				: "Last updated —"}
           </p>
         </div>
       </div>
